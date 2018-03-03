@@ -8,7 +8,7 @@ def change_time():
   return datetime.timedelta(minutes=1) 
 
 now = datetime.datetime.now() 
-commit_date = (now.replace(day=now.day-7) + change_day()) 
+commit_date = (now.replace(day=now.day-2) + change_day()) 
 print change_day()
 print commit_date
 print now
