@@ -22,4 +22,5 @@ while commit_date < now:
     f.close()
     os.system('git add .') 
     os.system('git commit --date={time} -m "Update {time}"'.format(time=commit_date.isoformat()))
+os.system('git pull')
 os.system('git push')
