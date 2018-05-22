@@ -8,7 +8,7 @@ def change_time():
   return datetime.timedelta(minutes=1) 
 
 now = datetime.datetime.now() 
-commit_date = now - datetime.timedelta(days=5) 
+commit_date = now - datetime.timedelta(days=14) 
 
 while commit_date < now: 
   commit_date = commit_date + change_day() 
